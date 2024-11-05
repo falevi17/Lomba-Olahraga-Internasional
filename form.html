@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Formulir Pendaftaran Peserta Lomba Olahraga Internasional</h1>
+    </header>
+
+    <!-- Formulir Pendaftaran -->
+    <main>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">Cabang olahraga:</label>
+            <select id="gender" name="gender">
+                <option value="Sepak bola">Sepak bola</option>
+                <option value="Tenis meja">Tenis meja</option>
+                <option value="Bola voli">Bola voli</option>
+                <option value="Sky">Sky</option>
+                <option value="Lari 500m">Lari 500m</option>
+                <option value="Voli Pantai">Voli Pantai</option>
+            </select>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender" name="gender">
+                <option value="pria">pria</option>
+                <option value="wanita">wanita</option>
+            </select>
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Komentar:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Hak Cipta © 2024 Lomba Olahraga Internasional</p>
+    </footer>
+</body>
+</html>
